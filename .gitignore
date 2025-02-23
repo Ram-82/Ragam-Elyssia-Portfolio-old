@@ -1,33 +1,20 @@
-# Gradle files
-.gradle/
-build/
+# Ignore system files
+.DS_Store
+Thumbs.db
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Ignore node_modules if using npm/yarn
+node_modules/
 
-# Log/OS Files
+# Ignore environment files (useful if you add backend services later)
+.env
+
+# Ignore build & cache files
+dist/
+out/
+.next/
+.vercel/
+.vscode/
 *.log
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# Ignore deployment-specific files
+*.env.local
