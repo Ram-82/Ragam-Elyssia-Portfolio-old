@@ -76,47 +76,25 @@
         .portfolio img:hover {
             transform: scale(1.05);
         }
-        .testimonial-slider {
-            display: flex;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            max-width: 600px;
-            margin: auto;
+        .footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
         }
-        .testimonial {
-            display: inline-block;
-            width: 100%;
-            font-style: italic;
-            padding: 10px;
+        .footer a {
+            color: gold;
+            margin: 0 10px;
+            text-decoration: none;
         }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background-color: gold;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .footer p {
+            font-size: 0.9rem;
+            color: #aaa;
         }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             gsap.to(".hero", {opacity: 1, duration: 1.5, ease: "power2.out"});
-            let testimonials = document.querySelectorAll(".testimonial");
-            let index = 0;
-            function rotateTestimonials() {
-                testimonials[index].style.display = "none";
-                index = (index + 1) % testimonials.length;
-                testimonials[index].style.display = "block";
-            }
-            setInterval(rotateTestimonials, 3000);
         });
     </script>
 </head>
@@ -143,21 +121,29 @@
     <div class="section services" id="services">
         <h2>Our Services</h2>
         <p>We offer luxury branding solutions including logo design, packaging, web design, and full brand strategy.</p>
-        <div class="testimonial-slider">
-            <p class="testimonial">“Ragam Elyssia transformed our brand into a masterpiece.” – Luxury Client</p>
-            <p class="testimonial" style="display:none;">“A true blend of AI and art, simply stunning.” – High-end Brand</p>
-        </div>
+        
+        <h3>🎨 Luxury Logo Design</h3>
+        <p>Bespoke logo creation for premium brands, ensuring exclusivity and elegance.</p>
+        
+        <h3>🖌️ Brand Identity Development</h3>
+        <p>Crafting timeless visual identities, complete with typography, color palettes, and brand guidelines.</p>
+        
+        <h3>📦 High-End Packaging Design</h3>
+        <p>Elevate your product presentation with luxurious packaging that enhances brand value.</p>
+        
+        <h3>🌐 Website & UI/UX Design</h3>
+        <p>Creating sleek, modern, and responsive websites with a luxury appeal.</p>
+        
+        <h3>📱 Social Media Branding</h3>
+        <p>Enhancing brand presence on platforms like Instagram & LinkedIn with high-end visuals.</p>
+        
+        <h3>🤖 Custom AI-Generated Brand Art</h3>
+        <p>Unique AI-powered branding solutions for exclusive, high-end aesthetics.</p>
     </div>
     
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to elevate your brand? Get in touch with us.</p>
-        <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <div class="footer">
+        <p>&copy; 2025 Ragam Elyssia. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Cookies Policy</a>
     </div>
 </body>
 </html>
